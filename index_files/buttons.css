@@ -1,0 +1,488 @@
+
+#lsc_padding {
+	height: 30px;
+	width: 100%;
+}
+
+.lsb_container *:hover {
+	text-decoration: none !important;
+}
+
+#lsc {
+	position: fixed;
+	bottom: 0px;
+	right: 0px;
+
+	width: auto;
+	z-index: 999999999999;
+
+	color: #FFF;
+	font-size: 14px;
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+#lsc a {
+	color: inherit;
+	text-decoration: none;
+}
+
+#lsc a:hover {
+	text-decoration: underline !important;
+	font-style: inherit !important;
+}
+
+.no-select, .no-select * {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.clearer {
+	clear: both;
+}
+
+#lsc * {
+	margin: 0px;
+	padding: 0px;
+}
+
+/* Notification CSS */
+
+#lsc_notification_box {
+	position: fixed;
+	bottom: 0px;
+	left: 40px;
+	z-index: 99999999999;
+}
+
+#lsc_notification_box .lsc_notification {
+	background: #ffffff;
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjQ3JSIgc3RvcC1jb2xvcj0iI2Y2ZjZmNiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlZGVkZWQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top, #ffffff 0%, #f6f6f6 47%, #ededed 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(47%,#f6f6f6), color-stop(100%,#ededed));
+	background: -webkit-linear-gradient(top, #ffffff 0%,#f6f6f6 47%,#ededed 100%);
+	background: -o-linear-gradient(top, #ffffff 0%,#f6f6f6 47%,#ededed 100%);
+	background: -ms-linear-gradient(top, #ffffff 0%,#f6f6f6 47%,#ededed 100%);
+	background: linear-gradient(to bottom, #ffffff 0%,#f6f6f6 47%,#ededed 100%);
+
+
+	border: 1px solid #777;
+	font: bold 1em Arial, Helvetica;
+	text-decoration: none;
+	color: #333;
+	text-shadow: 0 1px 0 rgba(255,255,255,.8);
+	-moz-border-radius: .5em;
+	-webkit-border-radius: .5em;
+	border-radius: .5em;
+	-moz-box-shadow: 0 0 1px 1px rgba(255,255,255,.8) inset, 0 1px 0 rgba(0,0,0,.3);
+	-webkit-box-shadow: 0 0 1px 1px rgba(255,255,255,.8) inset, 0 1px 0 rgba(0,0,0,.3);
+	box-shadow: 0 0 1px 1px rgba(255,255,255,.8) inset, 0 1px 0 rgba(0,0,0,.3);
+
+	width: auto;
+	max-width: 300px;
+	min-height: 55px;
+
+	margin-bottom: 10px;
+	padding: 0 10px;
+
+	cursor: default;
+	display: none;
+}
+
+#lsc_notification_box .lsc_notification .lsc_cart_icon {
+	width: 35px;
+	height: 35px;
+	position: absolute;
+	margin: 10px 9px 10px 10px;
+	background: #000;
+	border: 1px solid #000;
+	left: 0px;
+
+	box-shadow: 1px 2px 1px rgba(255,255,255,0.1);
+	-moz-box-shadow: 1px 2px 1px rgba(255,255,255,0.1);
+	-webkit-box-shadow: 1px 2px 1px rgba(255,255,255,0.1);
+	overflow: hidden;
+}
+
+#lsc_notification_box .lsc_notification .lsc_cart_icon img {
+	width: 100%;
+	height: 100%;
+}
+
+#lsc_notification_box .lsc_notification .lsc_cart_text {
+	margin: 10px 0;
+	margin-top: 0px;
+	padding-left: 50px;
+	float: left;
+	text-align: left;
+	color: #888;
+	font-size: 12px;
+	padding-top: 8px;
+}
+
+#lsc_notification_box .lsc_notification .lsc_cart_itemname a {
+	color: black;
+}
+
+/*************************************  BUTTON CSS  *************************************/
+
+.lsb_container {
+	position: relative;
+	width: auto;
+	height: auto;
+	cursor: pointer;
+	overflow: display;
+	background: none !important;
+}
+
+.lsb_container .LeaseStationButton {
+	position: relative;
+	top: 0px;
+	left: 0px;
+}
+
+/* Link */
+
+.lsb_container .LeaseStationButton.link > div {
+	font-weight: normal;
+	color: blue;
+	top: 5px;
+	left: 0px;
+	width: auto;
+	text-align: left;
+	padding-left: 20px;
+	text-decoration: none;
+	position: relative;
+}
+
+.lsb_container .LeaseStationButton.link {
+	width: 150px;
+	height: 25px;
+}
+
+.lsb_container .LeaseStationButton.link > div:hover {
+	text-decoration: underline;
+}
+
+/* Small Button - Don't fix the style for this button. It will affect existing patches */
+
+.lsb_container .LeaseStationButton.smallbutton {
+	width: 99px;
+	height: 45px;
+}
+
+.lsb_container .smallbutton > div {
+	position: absolute;
+	top: 24px;
+	left: 40px;
+	width: 80px;
+	text-align: center;
+	color: red;
+	font-size: 12px;
+	line-height: 12px;
+	font-weight: bold;
+	font-family: arial;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+/* Check Button */
+
+.lsb_container .LeaseStationButton.checkbutton {
+	width: 135px;
+	height: 54px;
+}
+
+.lsb_container .checkbutton > div {
+	position: absolute;
+	top: 24px;
+	left: 40px;
+	width: 80px;
+	text-align: center;
+	color: red;
+	font-size: 12px;
+	line-height: 12px;
+	font-weight: bold;
+	font-family: arial;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+/* Small Button No Text */
+
+.lsb_container .LeaseStationButton.smallbuttonnotext {
+	width: 99px;
+	height: 45px;
+}
+
+.lsb_container .smallbuttonnotext > div {
+	position: absolute;
+	top: 6px;
+	left: 15px;
+	width: 80px;
+	text-align: center;
+	color: red;
+	font-size: 12px;
+	line-height: 12px;
+	font-weight: bold;
+	font-family: arial;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+/***********************************  END BUTTON CSS  ***********************************/
+
+
+/*************************************  BANNER CSS  *************************************/
+
+.LeaseStationBanner {
+	position: relative;
+}
+
+.LeaseStationBanner p {
+   position: absolute;
+}
+
+.LeaseStationBanner img {
+   position: absolute;
+   left: 0;
+   top: 0;
+}
+
+.LSBannerHeader p {
+   color: white;
+   font-size: 34px;
+   font-weight: bold;
+   font-family: arial;
+   left: 580px;
+   top: -8px;
+}
+
+.LSBannerRectangle p {
+   color: white;
+   font-size: 34px;
+   font-weight: bold;
+   font-family: arial;
+   left: 125px;
+   top: 97px;
+}
+
+.LSBannerSquare p {
+   color: white;
+   font-size: 34px;
+   font-weight: bold;
+   font-family: arial;
+   left: 52px;
+   top: 98px;
+}
+
+/***********************************  END BANNER CSS  ***********************************/
+
+#lsc .lsc_cart {
+	width: auto;
+	padding: 10px 40px;
+	background: #018BE8;
+	color: #FFF;
+	float: right;
+	text-align: center;
+	margin-right: 50px;
+
+	border-radius: 8px 8px 0 0;
+	-moz-border-radius: 8px 8px 0 0;
+	-webkit-border-radius: 8px 8px 0 0;
+
+	box-shadow: 0 1px 2px rgba(255,255,255,0.35) inset, 0 1px 1px rgba(0,0,0,0.25) inset, 0 2px 5px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0 1px 2px rgba(255,255,255,0.35) inset, 0 1px 1px rgba(0,0,0,0.25) inset, 0 2px 5px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 0 1px 2px rgba(255,255,255,0.35) inset, 0 1px 1px rgba(0,0,0,0.25) inset, 0 2px 5px rgba(0,0,0,0.5);
+
+	cursor: pointer;
+}
+
+#lsc .lsc_cart.left { float: left; margin-left: 50px; }
+
+#lsc .lsc_cart a {
+	color: #FFF;
+	text-decoration: none;
+}
+
+#lsc .lsc_hidden_cart {
+	width: 400px;
+	height: auto;
+	color: #000;
+	background: #EEEEEE;
+
+	display: none;
+	margin-right: 50px;
+	float: right;
+
+
+	position: relative;
+	z-index: 2;
+
+	border: 1px solid #CCC;
+}
+
+#lsc .lsc_hidden_cart.left { float: left; margin-left: 50px; }
+
+#lsc .lsc_cart_list {
+	width: 100%;
+	height: auto;
+	max-height: 300px;
+	overflow: auto;
+}
+
+#lsc .lsc_cart_list .lsc_cart_item {
+	height: auto;
+	width: 100%;
+	position: relative;
+
+	min-height: 85px;
+	background: #FFFFFF;
+}
+
+#lsc .lsc_cart_item .lsc_cart_icon {
+	width: 55px;
+	height: 55px;
+	position: absolute;
+	margin: 14px 9px 15px 15px;
+	background: #000;
+	border: 1px solid #000;
+	left: 0px;
+
+	box-shadow: 1px 2px 1px rgba(255,255,255,0.1);
+	-moz-box-shadow: 1px 2px 1px rgba(255,255,255,0.1);
+	-webkit-box-shadow: 1px 2px 1px rgba(255,255,255,0.1);
+	overflow: hidden;
+}
+
+#lsc .lsc_cart_item .lsc_cart_icon img {
+	width: 100%;
+	height: 100%;
+}
+
+#lsc .lsc_cart_item .lsc_cart_text {
+	margin: 15px 0;
+	margin-top: 8px;
+	padding-left: 80px;
+	float: left;
+	text-align: left;
+}
+
+#lsc .lsc_cart_item .lsc_cart_itemname {
+	font-size: 14px;
+	font-weight: bold;
+	color: black;
+	padding-right: 140px;
+}
+
+#lsc .lsc_cart_item .lsc_cart_itemname a:hover {
+	text-decoration: underline;
+}
+
+
+#lsc .lsc_cart_item .lsc_cart_iteminfo {
+	color: #018BE8;
+	font-size: 14px;
+	font-style: italic;
+	padding-right: 140px;
+}
+
+#lsc .lsc_cart_item .lsc_cart_itemprice {
+	color: #000000;
+	font-size: 14px;
+	padding-right: 140px;
+}
+
+#lsc .lsc_qty {
+	position: absolute;
+	top: 15px;
+	right: 20px;
+	float: right;
+}
+
+#lsc .lsc_qty span {
+	font-size: 14px;
+	color: #000000;
+	padding: 0 5px;
+	display: block;
+	float: left;
+}
+
+
+#lsc .lsc_qty .lsc_qty_field {
+	float: right;
+	width: 40px;
+	color: #000000;
+	padding: 0 5px;
+	text-align: center;
+}
+
+#lsc .lsc_remove {
+	position: absolute;
+	right: 32px;
+	top: 45px;
+	font-size: 10px;
+	padding: 3px 10px;
+	background: #F9F9F9;
+	border: 1px solid #EEE;
+	color: #CCC;
+	cursor: pointer;
+}
+
+#lsc .lsc_remove:hover {
+	color: #AAA;
+}
+
+
+#lsc .lsc_cart_bottom {
+	width: 100%;
+	height: 50px;
+	color: #000;
+
+	background: #EFEFEF;
+	border-top: 2px solid #CCCCCC;
+}
+
+#lsc .lsc_cart_bottom .lsc_cart_totalfield {
+	font-size: 14px;
+	color: #000;
+	padding: 10px 15px;
+	margin-top: 3px;
+	font-weight: bold;
+	float: left;
+}
+
+#lsc .lsc_cart_bottom .lsc_cart_totalfield span {
+	color: #018BE8;
+	font-size: 16px;
+	position: relative;
+	top: 1px;
+}
+
+#lsc .lsc_cart_checkout {
+	background: #018BE8;
+	color: #FFFFFF;
+	float: right;
+	text-align: center;
+
+	padding: 5px 20px;
+	margin-top: 10px;
+	margin-right: 15px;
+
+	border: 2px solid #CCCCCC;
+
+	box-shadow: 0 1px 2px rgba(255,255,255,0.35) inset, 0 1px 1px rgba(0,0,0,0.25) inset;
+	-moz-box-shadow: 0 1px 2px rgba(255,255,255,0.35) inset, 0 1px 1px rgba(0,0,0,0.25) inset;
+	-webkit-box-shadow: 0 1px 2px rgba(255,255,255,0.35) inset, 0 1px 1px rgba(0,0,0,0.25) inset;
+
+	cursor: pointer;
+}
+
+#lsc .lsc_cart_checkout:active {
+	border: 2px solid #DDDDDD;
+}
+
+
