@@ -127,25 +127,6 @@
 
                 var caStartCheckout = function caStartCheckout() {
                     ChargeAfter.ui.present({
-                        consumerDetails: {
-                            firstName: "David",
-                            lastName: "Miller",
-                            email: "david.miller@idontcare.com",
-                            phoneNumber: "+1-212-555-1212",
-                            merchantConsumerId: "merchant-internal-consumer-id",
-                            shippingAddress: {
-                                line1: "499 W 55th St",
-                                city: "New York",
-                                zipCode: "10019",
-                                state: "NY"
-                            },
-                            billingAddress: {
-                                line1: "499 W 55th St",
-                                city: "New York",
-                                zipCode: "10019",
-                                state: "NY"
-                            }
-                        },
                         items: [
                             {
                                 name: 'Awesome Product',
@@ -174,26 +155,7 @@
                         shippingAmount: 20.0,
                         totalAmount: 1849.0,
                         callback: function(token, error) {
-                            var url = 'https://api-demo.ca-dev.co/v1/payment/charges'
-                            var data = JSON.stringify({
-                              'confirmationToken': token
-                            });
-                            const p = document.createElement('p');
-                            document.body.appendChild(p);
-                            if (token) {
-                                $.ajax({
-                                  type: "POST",
-                                  url: url,
-                                  data: data,
-                                  crossDomain: true,
-                                  dataType: "json",
-                                  headers: {
-                                    'Authorization': 'Bearer ' + '5b978ebce4749fcd84d8c94517c935a402316503'
-                                  }
-                                });
-                            } else {
-                              console.log('Error', error.message);
-                            }
+                            
                         }
                     });
                 }
