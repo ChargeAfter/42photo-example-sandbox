@@ -61,7 +61,9 @@
                                   }
                                 });
                             } else {
-                              console.log('Error', error.message);
+                              if (error) {
+                                console.log('Error', error.message);
+                              }
                             }
 
                         }
@@ -71,8 +73,6 @@
                 window.caStartCheckout = caStartCheckout;
         </script>
 
-        <a href="#" onclick="caStartCheckout();">
-            <img src="https://cdn-develop.ca-dev.co/checkout/v1/checkout-button.png" />
-        </a>
+        <a href="#" class="ca-checkout-button" onclick="caStartCheckout();" />
     </body>
 </html>
