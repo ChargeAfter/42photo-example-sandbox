@@ -9,7 +9,7 @@
 
                 !function(e,t,c,a,n){var r,o=t.getElementsByTagName(c)[0];
                 t.getElementById(a)||(e.ChargeAfter={ak:n},(r=t.createElement(c)).id=a,
-                r.src="https://cdn-develop.ca-dev.co/checkout/v1/checkout.min.js?t="+1*new Date,
+                r.src="https://cdn-qa.ca-dev.co/checkout/v1/checkout.min.js?t="+1*new Date,
                 r.async=!0,o.parentNode.insertBefore(r,o))}
                 (window,document,"script","chargeafter-checkout",caConfig);
                 
@@ -44,7 +44,7 @@
                         shippingAmount: 20.0,
                         totalAmount: 1125.0,
                         callback: function(token, error) {
-                            var url = 'https://api-develop.ca-dev.co/v1/payment/charges'
+                            var url = 'https://api-qa.ca-dev.co/v1/payment/charges'
                             var data = JSON.stringify({
                               'confirmationToken': token
                             });
@@ -62,9 +62,7 @@
                                   }
                                 });
                             } else {
-                              if (error) {
-                                console.log('Error', error.message);
-                              }
+                              console.log('Error', error.message);
                             }
 
                         }
