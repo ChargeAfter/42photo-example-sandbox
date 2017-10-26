@@ -44,13 +44,13 @@
                         shippingAmount: 20.0,
                         totalAmount: 1040.0,
                         callback: function(token, consumerDetails, error) {
-                            var url = 'https://api-qa.ca-dev.co/v1/payment/charges'
-                            var data = JSON.stringify({
-                              'confirmationToken': token
-                            });
-                            const p = document.createElement('p');
-                            document.body.appendChild(p);
                             if (token) {
+                                var url = 'https://api-qa.ca-dev.co/v1/payment/charges'
+                                var data = JSON.stringify({
+                                  'confirmationToken': token
+                                });
+                                var p = document.createElement('p');
+                                document.body.appendChild(p);
                                 p.innerHTML = 'Created token: ' + token;
                                 $.ajax({
                                   type: "POST",
@@ -60,6 +60,11 @@
                                   dataType: "json",
                                   headers: {
                                     'Authorization': 'Bearer ' + '5b978ebce4749fcd84d8c94517c935a402316503'
+                                  },
+                                  success: function() {
+                                    var r = document.createElement('p');
+                                    document.body.appendChild(r);
+                                    r.innerHTML = 'Created Charge';
                                   }
                                 });
                             } else {
